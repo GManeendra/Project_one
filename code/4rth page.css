@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.topbar {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.banner-section {
+    background-image: url('./images/header_image.1dc0f346d407fc577d16.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 12px 20px;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    outline: none;
+}
+
+.search-button {
+    background-color: #f15a24;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-button i {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: white;
+}
+
+.search-button:hover i {
+    color: orangered;
+}
+
+/* Banner Headings */
+.banner-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.banner-subtext {
+    font-size: 14px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* 2nd header */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Breadcrumb bar */
+.bar2 {
+    background-color: orangered;
+    /* Brown-orange background */
+    color: #f0f0f0;
+    /* Light text color */
+    padding: 12px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: 70px
+}
+
+/* Add space between items */
+.bar2 i,
+.bar2 span {
+    margin-right: 10px;
+}
+
+/* start */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-section {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.content-section h1 {
+    color: #963F17;
+    margin-top: 0;
+}
+
+.content-section p {
+    margin: 10px 0;
+}
+
+.content-section a {
+    color: #963F17;
+    text-decoration: none;
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid #963F17;
+    color: #963F17;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.ingredients-box {
+    background-color: #f75205;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.ingredients-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.ingredients-grid {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hide all list items by default */
+li {
+    display: none;
+    align-items: center;
+}
+
+/* Show only the 1st, 2nd, and 3rd items */
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5),
+li:nth-child(6),
+li:nth-child(7)
+{
+    display: flex;
+    /* background-color: #333; */
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* Number circle */
+.number {
+    background-color:olivedrab;
+    box-shadow: white;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Ingredient text */
+.ingredient {
+    color: white;
+    font-size: 18px;
+}
+/* cards section */
+
+/* Card Layout (Flex version) */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px 50px;
+}
+
+/* Single Card */
+.card {
+    cursor: pointer;
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* Tag Label */
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f15a24;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
