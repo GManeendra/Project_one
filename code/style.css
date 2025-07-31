@@ -7,7 +7,7 @@ body {
 }
 
 /* Navbar */
-.topbar {
+.Navbar {
     background-color: #e85d04;
     color: white;
     display: flex;
@@ -16,18 +16,18 @@ body {
     padding: 15px 30px;
 }
 
-.brand {
+.logo {
     font-weight: bold;
     font-size: 20px;
 }
 
-.menu-btn {
+.bar {
     font-size: 20px;
     cursor: pointer;
 }
 
 /* Banner Section */
-.banner-section {
+.banner {
     background-image: url('./images/header_image.1dc0f346d407fc577d16.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -43,14 +43,14 @@ body {
 }
 
 /* Search Container */
-.search-container {
+.search_bar {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.search-input {
+.user {
     border: none;
     font-size: 16px;
     border-radius: 50px;
@@ -61,11 +61,11 @@ body {
     outline: none;
 }
 
-.search-button {
+.search_icon {
     background-color: #f15a24;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 42px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -74,17 +74,17 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.search-button i {
+.search_icon i {
     color: white;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
-.search-button:hover {
+.search_icon:hover {
     background-color: white;
 }
 
-.search-button:hover i {
+.search_icon:hover i {
     color: orangered;
 }
 
@@ -102,16 +102,15 @@ body {
 }
 
 /* Section Title */
-.section-title {
+.label {
     font-size: 28px;
     font-weight: bold;
-    text-transform: uppercase;
     color: #111;
     margin: 40px 0 10px 30px;
     position: relative;
 }
 
-.section-title::after {
+.label::after {
     content: "";
     width: 50px;
     height: 4px;
@@ -120,18 +119,19 @@ body {
     margin-top: 8px;
 }
 
-/* Card Layout (Flex version) */
-.card-grid {
+.cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: 50px;
     gap: 20px;
+    align-items: center;
+    gap: 50px;
     padding: 0 30px 50px;
 }
 
-/* Single Card */
+/*  Cards */
 .card {
+
     cursor: pointer;
     width: 200px;
     background-color: white;
