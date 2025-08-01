@@ -14,6 +14,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 05;
+    margin: 0px;
 }
 
 .logo {
@@ -28,6 +33,7 @@ body {
 
 /* Banner Section */
 .banner {
+    margin: 0px;
     background-image: url('./images/header_image.1dc0f346d407fc577d16.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -40,6 +46,17 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Search Container */
@@ -48,6 +65,8 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    opacity: 1;
+    z-index: 2;
 }
 
 .user {
@@ -93,73 +112,14 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
+    opacity: 1;
+    z-index: 2;
 }
 
 .banner-subtext {
     font-size: 14px;
     margin-top: 5px;
     letter-spacing: 1px;
-}
-
-/* Section Title */
-.label {
-    font-size: 28px;
-    font-weight: bold;
-    color: #111;
-    margin: 40px 0 10px 30px;
-    position: relative;
-}
-
-.label::after {
-    content: "";
-    width: 50px;
-    height: 4px;
-    background-color: #f15a24;
-    display: block;
-    margin-top: 8px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
-    gap: 20px;
-    align-items: center;
-    gap: 50px;
-    padding: 0 30px 50px;
-}
-
-/*  Cards */
-.card {
-
-    cursor: pointer;
-    width: 200px;
-    background-color: white;
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card img {
-    width: 100%;
-    display: block;
-}
-
-/* Tag Label */
-.tag {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #f15a24;
-    color: white;
-    font-size: 12px;
-    padding: 3px 8px;
-    border-radius: 3px;
-    font-weight: bold;
+    opacity: 1;
+    z-index: 2;
 }
