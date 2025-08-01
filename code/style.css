@@ -123,3 +123,97 @@ body {
     opacity: 1;
     z-index: 2;
 }
+
+/* Section Title */
+.label {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    margin: 40px 0 10px 30px;
+    position: relative;
+}
+
+.label::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #f15a24;
+    display: block;
+    margin-top: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    gap: 20px;
+    align-items: center;
+    gap: 50px;
+    padding: 0 30px 50px;
+}
+
+/*  Cards */
+.side-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 70px;
+    padding: 20px;
+    position: relative;
+}
+
+.side-heading::after {
+    content: "";
+    width: 110px;
+    height: 4px;
+    background-color: #f15a24;
+    display: block;
+    margin-top: 8px;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 20px;
+    background-color: #f7f5f5;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border: 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+    left: 60px;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+.item img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+/* Tag Label */
+.tag {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orangered;
+    border: 0px solid black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
