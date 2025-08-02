@@ -81,7 +81,7 @@ body {
     background-color: #f15a24;
     border: none;
     width: 50px;
-    height: 42px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -121,24 +121,43 @@ body {
     z-index: 2;
 }
 /* information section*/
-.info-description {
-    padding: 16px;
-    border-radius: 6px;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.5;
-    margin-top: 10px;
-    margin-right: 20px;
-}
 
 .info-card {
     margin: 30px auto;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 77px;
+    margin-right: 77px;
     padding: 10px 20px;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid orangered;
+    background-color: rgb(240, 238, 238);
+}
+.info-title{
+    margin-left: 15px;
+}
+.info-description {
+    padding: 16px;
+    border-radius: 6px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 10px;
+   
+}
+.side-heading2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 60px;
+    padding: 20px;
+    position: relative;
+}
+
+.side-heading2::after {
+    content: "";
+    width: 105px;
+    height: 4px;
+    background-color: #f15a24;
+    display: block;
+    margin-top: 8px;
 }
 /* meals section */
 .food-items1 {
@@ -147,15 +166,15 @@ body {
     align-items: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 1250px;
-    margin-left: 70px;
+    width: 1400px;
+    margin-left: 60px;
 }
 
 .item1 {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 250px;
+    width: 235px;
+    height: 300px;
     margin: 20px;
     background-color: white;
     border: 1px #ccc;
@@ -169,8 +188,8 @@ body {
 }
 
 .item1 img {
-    width: 200px;
-    height: 200px;
+    width: 235px;
+    height: 245px;
     object-fit: cover;
     border-radius: 3px;
 }

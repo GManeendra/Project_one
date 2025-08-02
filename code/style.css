@@ -1,13 +1,13 @@
 /* General Styles */
 body {
-    background-color: white;
+    background-color: rgb(243, 241, 241);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Navbar */
-.Navbar {
+.header {
     background-color: #e85d04;
     color: white;
     display: flex;
@@ -84,7 +84,7 @@ body {
     background-color: #f15a24;
     border: none;
     width: 50px;
-    height: 42px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -123,40 +123,10 @@ body {
     opacity: 1;
     z-index: 2;
 }
-
-/* Section Title */
-.label {
-    font-size: 28px;
-    font-weight: bold;
-    color: #111;
-    margin: 40px 0 10px 30px;
-    position: relative;
-}
-
-.label::after {
-    content: "";
-    width: 50px;
-    height: 4px;
-    background-color: #f15a24;
-    display: block;
-    margin-top: 8px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
-    gap: 20px;
-    align-items: center;
-    gap: 50px;
-    padding: 0 30px 50px;
-}
-
-/*  Cards */
 .side-heading {
     font-size: 28px;
     font-weight: bold;
-    margin-left: 70px;
+    margin-left: 40px;
     padding: 20px;
     position: relative;
 }
@@ -175,7 +145,6 @@ body {
     flex-wrap: wrap;
     justify-content: start;
     padding: 20px;
-    background-color: #f7f5f5;
 }
 
 .item {
@@ -189,7 +158,7 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.2s ease;
-    left: 60px;
+    left: 30px;
 }
 
 .item:hover {
@@ -202,7 +171,6 @@ body {
     border-radius: 5px;
     padding: 7px;
 }
-
 
 /* Tag Label */
 .tag {
